@@ -16,3 +16,11 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+# other files
+*.bak
+*~
+.gitignore
+.idea
+.idea/*
+.iml
+.history
