@@ -11,9 +11,6 @@
 #import "CMUseExistingViewController.h"
 
 @interface CMMainMenuViewController ()
-- (IBAction)capturePhoto:(UIButton *)sender;
-- (IBAction)useExistingPhoto:(UIButton *)sender;
-- (IBAction)previousCaptures:(UIButton *)sender;
 @end
 
 @implementation CMMainMenuViewController
@@ -37,19 +34,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)capturePhoto:(UIButton *)sender {
-    CMCaptureViewController* controller = [[CMCaptureViewController alloc] init];
-    [[self navigationController] pushViewController:controller animated:YES];
-}
-
-- (IBAction)useExistingPhoto:(UIButton *)sender {
-    CMUseExistingViewController* controller = [[CMUseExistingViewController alloc] init];
-    [[self navigationController] pushViewController:controller animated:YES];
-}
-
-- (IBAction)previousCaptures:(UIButton *)sender {
 }
 
 @end
