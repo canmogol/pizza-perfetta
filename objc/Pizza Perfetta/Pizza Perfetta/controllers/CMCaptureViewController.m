@@ -32,11 +32,9 @@
     [[[self captureManager] previewLayer] setPosition:CGPointMake(CGRectGetMidX(layerRect),CGRectGetMidY(layerRect))];
 	[[[self view] layer] addSublayer:[[self captureManager] previewLayer]];
     
-    /*
     UIImageView *overlayImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"overlaygraphic.png"]];
     [overlayImageView setFrame:CGRectMake(30, 200, 260, 200)];
     [[self view] addSubview:overlayImageView];
-    */
     
     
     UIButton *overlayButton = [UIButton buttonWithType:UIButtonTypeCustom];
