@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="pepperoni_pizza.ttf">
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+            <string>PepperoniPizza</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" customModule="Pizza_Perfetta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999969" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="table.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-oP-gyL">
+                                <rect key="frame" x="0.0" y="28" width="600" height="800"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32A-Nq-tKW">
+                                <rect key="frame" x="202" y="143" width="197" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Sa2-eX-GTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="Capture A Photo">
+                                    <color key="titleColor" red="0.70196078431372544" green="0.0" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oBn-u2-kb1" kind="show" id="jz2-Ow-Glk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-UT-CcJ">
+                                <rect key="frame" x="-5" y="28" width="612" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7UV-fW-b6a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pizza Perfetta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3x-Mo-Pup">
+                                <rect key="frame" x="208" y="37" width="184" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="dGS-70-mrt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuG-va-RvT">
+                                <rect key="frame" x="133" y="198" width="336" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="MIA-67-ONs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="Use An Existing Photo">
+                                    <color key="titleColor" red="0.70196078429999997" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-Be-rLp">
+                                <rect key="frame" x="154" y="253" width="293" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="P1Q-FA-wHy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="Previous Captures">
+                                    <color key="titleColor" red="0.70196078429999997" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neapolitanPizza.png" translatesAutoresizingMaskIntoConstraints="NO" id="HA7-ju-VjZ">
+                                <rect key="frame" x="94" y="402" width="412" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="335" id="boY-QW-qbS"/>
+                                    <constraint firstAttribute="width" constant="412" id="xw4-Nj-whc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G3x-Mo-Pup" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="Bkw-bO-bLc"/>
+                            <constraint firstAttribute="centerX" secondItem="dAD-Be-rLp" secondAttribute="centerX" id="CiI-te-YUx"/>
+                            <constraint firstItem="HA7-ju-VjZ" firstAttribute="top" secondItem="dAD-Be-rLp" secondAttribute="bottom" constant="102" id="ce5-up-7fF"/>
+                            <constraint firstAttribute="centerX" secondItem="vuG-va-RvT" secondAttribute="centerX" id="f45-ay-Z8v"/>
+                            <constraint firstItem="32A-Nq-tKW" firstAttribute="top" secondItem="wzX-UT-CcJ" secondAttribute="bottom" constant="45" id="fKz-DZ-W48"/>
+                            <constraint firstItem="wzX-UT-CcJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="j4q-eh-hOd"/>
+                            <constraint firstAttribute="centerX" secondItem="32A-Nq-tKW" secondAttribute="centerX" id="kAg-DH-2xv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HA7-ju-VjZ" secondAttribute="bottom" constant="-137" id="mAJ-rv-C2S"/>
+                            <constraint firstAttribute="centerX" secondItem="G3x-Mo-Pup" secondAttribute="centerX" id="meR-Ib-FZQ"/>
+                            <constraint firstItem="dAD-Be-rLp" firstAttribute="top" secondItem="vuG-va-RvT" secondAttribute="bottom" constant="8" id="qWD-c4-hwd"/>
+                            <constraint firstItem="vuG-va-RvT" firstAttribute="top" secondItem="32A-Nq-tKW" secondAttribute="bottom" constant="8" id="qsY-vO-BHP"/>
+                            <constraint firstAttribute="centerX" secondItem="HA7-ju-VjZ" secondAttribute="centerX" id="wws-zG-OMu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="dWn-YR-lFd">
+            <objects>
+                <viewController id="oBn-u2-kb1" customClass="CameraViewController" customModule="Pizza_Perfetta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PEG-Ns-h8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="e3q-rf-oDD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SBH-pi-OJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9XM-Zh-HNX" userLabel="ImageCaptureView">
+                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tpn-f6-dWU">
+                                <rect key="frame" x="-1" y="26" width="601" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="tBu-xB-slB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="zfb-jh-B0A"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGX-D9-slN">
+                                <rect key="frame" x="243" y="550" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bxh-4x-bW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="Capture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DhF-uE-WRe" kind="show" id="bKA-Ho-b7R"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlaygraphic.png" translatesAutoresizingMaskIntoConstraints="NO" id="mJV-lk-vLJ" userLabel="overlay">
+                                <rect key="frame" x="162" y="182" width="277" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="277" id="K1v-O7-oSN"/>
+                                    <constraint firstAttribute="height" constant="235" id="XkH-z0-YIF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHM-P4-1ss">
+                                <rect key="frame" x="16" y="43" width="95" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vla-xr-6qa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="«Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="F4p-3r-sCE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wGX-D9-slN" secondAttribute="centerX" id="0TG-ur-66g"/>
+                            <constraint firstItem="e3q-rf-oDD" firstAttribute="top" secondItem="wGX-D9-slN" secondAttribute="bottom" constant="20" id="7ZI-zz-lMR"/>
+                            <constraint firstItem="kHM-P4-1ss" firstAttribute="top" secondItem="PEG-Ns-h8H" secondAttribute="bottom" constant="23" id="Uro-Qm-sTM"/>
+                            <constraint firstItem="9XM-Zh-HNX" firstAttribute="leading" secondItem="SBH-pi-OJ4" secondAttribute="leadingMargin" constant="-16" id="YDe-QJ-499"/>
+                            <constraint firstAttribute="centerX" secondItem="mJV-lk-vLJ" secondAttribute="centerX" id="c0A-Sb-qrQ"/>
+                            <constraint firstItem="9XM-Zh-HNX" firstAttribute="top" secondItem="Tpn-f6-dWU" secondAttribute="bottom" id="d5s-bn-5KL"/>
+                            <constraint firstAttribute="centerY" secondItem="mJV-lk-vLJ" secondAttribute="centerY" id="e2I-WG-Cap"/>
+                            <constraint firstItem="e3q-rf-oDD" firstAttribute="top" secondItem="9XM-Zh-HNX" secondAttribute="bottom" id="fml-kV-tzb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9XM-Zh-HNX" secondAttribute="trailing" constant="-16" id="gsA-ca-Egy"/>
+                            <constraint firstItem="kHM-P4-1ss" firstAttribute="leading" secondItem="SBH-pi-OJ4" secondAttribute="leadingMargin" id="onQ-Fm-ufz"/>
+                            <constraint firstItem="Tpn-f6-dWU" firstAttribute="top" secondItem="PEG-Ns-h8H" secondAttribute="bottom" constant="6" id="r9y-Dh-iuQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoPreviewView" destination="9XM-Zh-HNX" id="Als-BZ-h7u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBw-4d-N3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="451"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Nsc-5p-vFN">
+            <objects>
+                <viewController id="DhF-uE-WRe" customClass="ImageViewController" customModule="Pizza_Perfetta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wXT-7k-Iuf"/>
+                        <viewControllerLayoutGuide type="bottom" id="wBo-IS-JUI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ijz-Oz-gOR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-64-j9n">
+                                <rect key="frame" x="0.0" y="26" width="600" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="mnW-TL-T79"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BurntNotAcceptableMediumPizzaOnly.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qzs-I8-4RR">
+                                <rect key="frame" x="168" y="162" width="264" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="1VJ-Qb-73F"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="241" id="LmE-Ka-z4z"/>
+                                    <constraint firstAttribute="width" constant="264" id="YGX-jc-RCz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="264" id="x6G-zu-X6B"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D50-PG-rM8">
+                                <rect key="frame" x="16" y="43" width="95" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kXL-ed-egD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="«Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oBn-u2-kb1" kind="show" id="evN-7w-YSa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qy-OA-qfQ">
+                                <rect key="frame" x="239" y="536" width="134" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="qSM-KA-sB9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="Analyze">
+                                    <color key="titleColor" red="0.70196078429999997" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.21568629149999999" green="0.21568629149999999" blue="0.21568629149999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GWT-aa-nFW" kind="show" id="7OG-Uf-asf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="pizza found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9s-C8-aOk">
+                                <rect key="frame" x="247" y="104" width="106" height="33"/>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="20"/>
+                                <color key="textColor" red="0.70196078429999997" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="table.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3At-gm-qiY">
+                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="7br-dq-cMK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Qzs-I8-4RR" secondAttribute="centerX" id="1Uy-XR-Lyc"/>
+                            <constraint firstItem="NRa-64-j9n" firstAttribute="top" secondItem="wXT-7k-Iuf" secondAttribute="bottom" constant="6" id="43m-B4-U3L"/>
+                            <constraint firstItem="v9s-C8-aOk" firstAttribute="top" secondItem="NRa-64-j9n" secondAttribute="bottom" constant="12" id="CTg-Vh-WZF"/>
+                            <constraint firstItem="3At-gm-qiY" firstAttribute="top" secondItem="NRa-64-j9n" secondAttribute="bottom" id="Lli-9C-eXe"/>
+                            <constraint firstAttribute="centerX" secondItem="v9s-C8-aOk" secondAttribute="centerX" id="NC4-Pi-s95"/>
+                            <constraint firstItem="wBo-IS-JUI" firstAttribute="top" secondItem="3At-gm-qiY" secondAttribute="bottom" id="aJx-sV-Hfg"/>
+                            <constraint firstItem="D50-PG-rM8" firstAttribute="top" secondItem="wXT-7k-Iuf" secondAttribute="bottom" constant="23" id="qHM-ev-Ocr"/>
+                            <constraint firstAttribute="centerX" secondItem="6qy-OA-qfQ" secondAttribute="centerX" id="rSa-93-tcj"/>
+                            <constraint firstAttribute="centerX" secondItem="Qzs-I8-4RR" secondAttribute="centerX" id="uVe-0H-yVB"/>
+                            <constraint firstItem="D50-PG-rM8" firstAttribute="leading" secondItem="Ijz-Oz-gOR" secondAttribute="leadingMargin" id="v3L-5l-GuD"/>
+                            <constraint firstItem="wBo-IS-JUI" firstAttribute="top" secondItem="6qy-OA-qfQ" secondAttribute="bottom" constant="8" id="xGM-5A-Tsl"/>
+                            <constraint firstItem="Qzs-I8-4RR" firstAttribute="top" secondItem="v9s-C8-aOk" secondAttribute="bottom" constant="33" id="zgE-oY-9Yd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wn3-vv-YEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="451"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RiE-aC-v5f">
+            <objects>
+                <viewController id="GWT-aa-nFW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pnJ-Ib-d4o"/>
+                        <viewControllerLayoutGuide type="bottom" id="aha-0U-qsJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bgb-a5-1C4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="table.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fon-Fd-bMQ">
+                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="AaM-MT-p1c">
+                                <rect key="frame" x="0.0" y="26" width="600" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ImD-Uc-Y0e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Burnt Not Acceptable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDw-gG-7yn">
+                                <rect key="frame" x="151" y="104" width="299" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0nv-0Y-S0S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="original.png" translatesAutoresizingMaskIntoConstraints="NO" id="2wS-Fw-KDk">
+                                <rect key="frame" x="225" y="153" width="150" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="4Jq-ZO-olQ"/>
+                                    <constraint firstAttribute="width" constant="150" id="OPV-z5-9JP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Analyzed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CU5-3h-Paz">
+                                <rect key="frame" x="253" y="268" width="95" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="h4d-qy-sCU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="20"/>
+                                <color key="textColor" white="0.33275462960000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Original" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-ht-AS6">
+                                <rect key="frame" x="231" y="141" width="131" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ojg-CW-rZ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="20"/>
+                                <color key="textColor" white="0.33275462960000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="18.2% Tomato" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj8-9F-Mln">
+                                <rect key="frame" x="216" y="477" width="165" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZlK-93-kvy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4.4% Basil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5u-Ls-gVe">
+                                <rect key="frame" x="245" y="448" width="124" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nYT-ar-Cgq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="23.7% Cheese" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-do-W6U">
+                                <rect key="frame" x="233" y="419" width="158" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ju9-8K-L7J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="20.1% Burnt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzO-Nr-jjq">
+                                <rect key="frame" x="209" y="390" width="165" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Fh0-wZ-DhV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ2-dI-E35">
+                                <rect key="frame" x="16" y="43" width="95" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ot1-Cd-nfC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="«Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DhF-uE-WRe" kind="show" id="kzL-88-PYO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlY-5f-vdW">
+                                <rect key="frame" x="515" y="48" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="1yQ-dp-7Hs"/>
+                                    <constraint firstAttribute="height" constant="30" id="IVg-2P-pxK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PepperoniPizza" family="Pepperoni Pizza" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="c1a-9d-gCp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="segmented.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wmv-F5-FTn">
+                                <rect key="frame" x="225" y="281" width="150" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Agq-fy-L8B"/>
+                                    <constraint firstAttribute="width" constant="150" id="iFM-2K-mZh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="x5u-Ls-gVe" secondAttribute="centerX" id="098-8b-Zo7"/>
+                            <constraint firstAttribute="centerX" secondItem="Yj8-9F-Mln" secondAttribute="centerX" id="156-kz-TyH"/>
+                            <constraint firstItem="8QN-do-W6U" firstAttribute="top" secondItem="mzO-Nr-jjq" secondAttribute="bottom" constant="8" id="3wI-hF-Iej"/>
+                            <constraint firstAttribute="centerX" secondItem="2wS-Fw-KDk" secondAttribute="centerX" id="669-9H-Sxq"/>
+                            <constraint firstAttribute="centerX" secondItem="CU5-3h-Paz" secondAttribute="centerX" id="6cu-e1-cVL"/>
+                            <constraint firstItem="SZ2-dI-E35" firstAttribute="leading" secondItem="bgb-a5-1C4" secondAttribute="leadingMargin" id="BTc-TS-vgd"/>
+                            <constraint firstItem="gZ0-ht-AS6" firstAttribute="top" secondItem="yDw-gG-7yn" secondAttribute="bottom" constant="5" id="Fgd-ue-zI5"/>
+                            <constraint firstItem="AaM-MT-p1c" firstAttribute="top" secondItem="pnJ-Ib-d4o" secondAttribute="bottom" constant="6" id="Ifk-XG-0p6"/>
+                            <constraint firstItem="SZ2-dI-E35" firstAttribute="top" secondItem="pnJ-Ib-d4o" secondAttribute="bottom" constant="23" id="J1T-vi-4R0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FlY-5f-vdW" secondAttribute="trailing" constant="5" id="LcZ-Wo-Z8A"/>
+                            <constraint firstAttribute="centerX" secondItem="Wmv-F5-FTn" secondAttribute="centerX" id="M0G-jZ-kV0"/>
+                            <constraint firstItem="mzO-Nr-jjq" firstAttribute="top" secondItem="CU5-3h-Paz" secondAttribute="bottom" constant="101" id="Nbx-1R-sGo"/>
+                            <constraint firstItem="x5u-Ls-gVe" firstAttribute="top" secondItem="8QN-do-W6U" secondAttribute="bottom" constant="8" id="QXg-5f-Q0t"/>
+                            <constraint firstAttribute="centerX" secondItem="gZ0-ht-AS6" secondAttribute="centerX" id="SlI-X0-y0e"/>
+                            <constraint firstAttribute="centerX" secondItem="yDw-gG-7yn" secondAttribute="centerX" id="Tkz-UW-aNZ"/>
+                            <constraint firstItem="Wmv-F5-FTn" firstAttribute="top" secondItem="2wS-Fw-KDk" secondAttribute="bottom" constant="8" id="XHf-Wy-g30"/>
+                            <constraint firstAttribute="centerX" secondItem="mzO-Nr-jjq" secondAttribute="centerX" id="d6M-U3-a9r"/>
+                            <constraint firstItem="FlY-5f-vdW" firstAttribute="top" secondItem="pnJ-Ib-d4o" secondAttribute="bottom" constant="28" id="df4-Pt-squ"/>
+                            <constraint firstItem="CU5-3h-Paz" firstAttribute="top" secondItem="gZ0-ht-AS6" secondAttribute="bottom" constant="106" id="eHs-IR-p9e"/>
+                            <constraint firstItem="Fon-Fd-bMQ" firstAttribute="top" secondItem="AaM-MT-p1c" secondAttribute="bottom" id="iBm-IF-bEN"/>
+                            <constraint firstAttribute="centerX" secondItem="8QN-do-W6U" secondAttribute="centerX" id="o3l-yt-1Sr"/>
+                            <constraint firstItem="2wS-Fw-KDk" firstAttribute="top" secondItem="yDw-gG-7yn" secondAttribute="bottom" constant="17" id="scO-Ho-eFV"/>
+                            <constraint firstItem="yDw-gG-7yn" firstAttribute="top" secondItem="AaM-MT-p1c" secondAttribute="bottom" constant="8" id="uMf-ue-Wgk"/>
+                            <constraint firstItem="Yj8-9F-Mln" firstAttribute="top" secondItem="x5u-Ls-gVe" secondAttribute="bottom" constant="8" id="z7N-ff-wP1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cH8-uE-LEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597" y="451"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BurntNotAcceptableMediumPizzaOnly.png" width="456" height="434"/>
+        <image name="bar.png" width="800" height="70"/>
+        <image name="neapolitanPizza.png" width="610" height="610"/>
+        <image name="original.png" width="652" height="582"/>
+        <image name="overlaygraphic.png" width="260" height="200"/>
+        <image name="segmented.png" width="652" height="582"/>
+        <image name="table.jpg" width="1024" height="758"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jz2-Ow-Glk"/>
+        <segue reference="c1a-9d-gCp"/>
+        <segue reference="kzL-88-PYO"/>
+    </inferredMetricsTieBreakers>
+</document>
